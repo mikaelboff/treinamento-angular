@@ -1,1 +1,3 @@
-<app-adicionar-nota></app-adicionar-nota>
+<app-adicionar-nota (submitForm)="submitForm($event)"></app-adicionar-nota>
+
+<app-listar-nota [notas]="listaDeNotas"></app-listar-nota>

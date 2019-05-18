@@ -1,4 +1,4 @@
-<form [formGroup]="adicionarNotaForm" (ngSubmit)="notaSubmit(adicionarNotaForm.value); adicionarNotaForm.resetForm()">
+<form [formGroup]="adicionarNotaForm" (ngSubmit)="notaSubmit(adicionarNotaForm.value); adicionarNotaForm.reset()">
 
     <span class="ui-float-label campo">
         <input formControlName="titulo" id="titulo" type="text" size="30" pInputText>
