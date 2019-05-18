@@ -1,0 +1,15 @@
+<form [formGroup]="adicionarNotaForm" (ngSubmit)="notaSubmit(adicionarNotaForm.value); adicionarNotaForm.resetForm()">
+
+    <span class="ui-float-label campo">
+        <input formControlName="titulo" id="titulo" type="text" size="30" pInputText>
+        <label for="titulo">Título</label>
+    </span>
+
+    <span class="ui-float-label campo">
+        <textarea formControlName="descricao" id="descricao" [rows]="5" [cols]="30" pInputTextarea
+            autoResize="autoResize"></textarea>
+        <label for="descricao">Descrição</label>
+    </span>
+
+    <button class="campo" pButton type="submit" icon="pi pi-check" label="Salvar"></button>
+</form>
